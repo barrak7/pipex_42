@@ -6,7 +6,7 @@
 /*   By: hbarrak <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/10 11:55:18 by hbarrak           #+#    #+#             */
-/*   Updated: 2023/01/10 11:55:37 by hbarrak          ###   ########.fr       */
+/*   Updated: 2023/01/14 21:03:42 by hbarrak          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 {
-	size_t sl;
-	size_t dl;
-	size_t s;
+	size_t	sl;
+	size_t	dl;
+	size_t	s;
 
 	if (!src || (!dst && dstsize))
 		return (0);

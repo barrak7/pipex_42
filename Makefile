@@ -3,7 +3,7 @@ CFLAGS=-Wall -Wextra -Werror
 NAME=pipex
 SRC=pipex.c help_func.c get_path.c
 OBJ=$(SRC:.c=.o)
-SRC_O=BONUS/get_path.c BONUS/help_funcs.c BONUS/pipex_bonus.c gnl/get_next_line.c gnl/get_next_line_utils.c
+SRC_O=BONUS/help_funcs.c BONUS/help_funcs1.c BONUS/help_funcs2.c BONUS/pipex_bonus.c gnl/get_next_line.c gnl/get_next_line_utils.c
 BONUS_O=$(SRC_O:.c=.o)
 
 all:$(NAME)

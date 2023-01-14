@@ -6,11 +6,15 @@
 /*   By: hbarrak <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 10:08:47 by hbarrak           #+#    #+#             */
-/*   Updated: 2023/01/12 10:23:13 by hbarrak          ###   ########.fr       */
+/*   Updated: 2023/01/14 21:03:15 by hbarrak          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line.h"
+
+#ifndef BUFFER_SIZE
+# define BUFFER_SIZE 8
+#endif
 
 static size_t	ft_strlen(const char *s)
 {

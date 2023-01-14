@@ -6,7 +6,7 @@
 /*   By: hbarrak <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/06 09:31:21 by hbarrak           #+#    #+#             */
-/*   Updated: 2023/01/12 10:23:19 by hbarrak          ###   ########.fr       */
+/*   Updated: 2023/01/14 21:03:07 by hbarrak          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,4 @@ char	*ft_strtrim_nl(char *str);
 char	*ft_substr(char *src, int start, size_t len);
 int		found_nl(char *dst, char **leftovers);
 
-#endif
-
-#ifndef BUFFER_SIZE
-# define BUFFER_SIZE 8
 #endif
