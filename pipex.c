@@ -6,7 +6,7 @@
 /*   By: hbarrak <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/05 10:02:14 by hbarrak           #+#    #+#             */
-/*   Updated: 2023/01/23 18:10:57 by hbarrak          ###   ########.fr       */
+/*   Updated: 2023/01/30 15:34:13 by hbarrak          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,6 @@ void	exec_f(int *pip_fd, char **argv, char *path)
 	if (!cmd)
 		exit(1);
 	file = get_cmd(cmd[0], path);
-	write(2, file, ft_strlen(file));
 	if (execve(file, cmd, NULL) == -1)
 		check_access(cmd[0], file);
 }
@@ -63,7 +62,6 @@ void	exec_l(int *pip_fd, char **argv, char *path)
 	if (!cmd)
 		exit(1);
 	file = get_cmd(cmd[0], path);
-	write(2, file, ft_strlen(file));
 	if (execve(file, cmd, NULL) == -1)
 		check_access(cmd[0], file);
 }
